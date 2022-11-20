@@ -1,0 +1,24 @@
+.body {
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+    margin: auto;
+}
+
+.card {
+    background-color: aquamarine;
+}
+
+.card h1 {
+    padding: 5%;
+    text-align: center;
+}
+
+.card .contenttitle {
+    border-radius: 5px;
+    background-color: rgb(245, 106, 106);
+}
+
+.card .contenttitle h3 {
+    font-size: 20px;
+}

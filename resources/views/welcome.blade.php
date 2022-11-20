@@ -264,7 +264,7 @@ header .navigation a:hover{
         <div class="info">
           <h2>Diagnosis Kerusakan Jaringan Komputer<br><span>Group 7</span></h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-          <a href="#" class="info-btn">Mulai diagnosis</a>
+          <a href="/diagnose" class="info-btn">Mulai diagnosis</a>
         </div>
       </div>
       {{-- <div class="media-icons">

@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\CertaintyFactor;
+use App\Http\Controllers\ResultController;
 use Spatie\LaravelIgnition\FlareMiddleware\AddJobs;
 
 /*
@@ -20,6 +22,9 @@ use Spatie\LaravelIgnition\FlareMiddleware\AddJobs;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/diagnose', [CertaintyFactor::class, 'show']);
+Route::post('/result', [ResultController::class, 'store'])->name('cf.postmethod');
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/login', [AuthController::class, 'login'])->name('auth.login');
