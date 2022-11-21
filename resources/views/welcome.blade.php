@@ -250,7 +250,7 @@ header .navigation a:hover{
         <h2><a href="#" class="logo">Expert System</a></h2>
         <div class="navigation">
           <a href="#">Home</a>
-          <a href="#">About</a>
+          <a href="/about">About</a>
           {{-- <a href="#">Info</a> --}}
           {{-- <a href="#">Services</a> --}}
           <a href="{{ route("auth.login") }}">Admin Panel</a>
