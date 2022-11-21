@@ -12,7 +12,7 @@
 </head>
 <body>
     @include("templates.navbar")
-    <div class="container card my-4" style="height:80vh; overflow:scroll;">
+    <div class="container card my-4" style="height:80vh; overflow:auto;">
         <div class="card-header p-5">
             <h3>Mulai Diagnosa</h3>
         </div>
@@ -27,7 +27,7 @@
                     <label for="{{ $c['id'] }}" class="form-checked-lalbel">No</label>
                 </div>
             @endforeach
-            <a href="/result"><input  class="btn btn-primary mx-3" type="submit" name="submit" value="Submit"/></a>
+            <a href="/result"><input  class="btn btn-primary mx-3 my-2" type="submit" name="submit" value="Submit"/></a>
         </form>
     </div>
 </body>
