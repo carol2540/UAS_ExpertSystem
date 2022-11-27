@@ -25,7 +25,7 @@
                         <h5 class="card-header d-flex justify-content-between px-4 align-items-center bg-danger text-white">
                             <i class="bi bi-shield-fill-plus fs-1"></i>
                             <div class="d-flex flex-column justify-content-center align-items-center">
-                                <div class="fs-1 fw-normal">74</div>
+                                <div class="fs-1 fw-normal">16</div>
                                 <div class="text-center">Gejala</div>
                             </div>
                         </h5>
@@ -37,23 +37,23 @@
                     </div>
                 </div>
             </div>
-            {{-- <div class="p-2 col-12 col-lg-4 col-sm-6 col-xxs-8">
+            <div class="p-2 col-12 col-lg-4 col-sm-6 col-xxs-8">
               <div class="card">
                   <h5 class="card-header d-flex justify-content-between px-4 align-items-center bg-success text-white">
                       <i class="bi bi-journal-text fs-1"></i>
 
                       <div class="d-flex flex-column justify-content-center align-items-center">
-                          <div class="fs-1 fw-normal">74</div>
-                          <div class="text-center">Riwayat</div>
+                          <div class="fs-1 fw-normal">10</div>
+                          <div class="text-center">Kerusakan</div>
                       </div>
                   </h5>
-                  <a href="{{ route("data.riwayat") }}"
+                  <a href="{{ route("data.kerusakan") }}"
                       class="card-body m-0 p-2 px-3 text-decoration-none d-flex justify-content-between align-items-center px-3">
                       <div>Selengkapnya</div>
                       <i class="bi bi-arrow-right-circle-fill text-success fs-5"></i>
                   </a>
               </div>
-          </div> --}}
+          </div>
         </div>
     </div>
 @endsection
