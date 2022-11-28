@@ -6,6 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CertaintyFactor;
 use App\Http\Controllers\ResultController;
+use App\Http\Controllers\SolutionController;
 use Spatie\LaravelIgnition\FlareMiddleware\AddJobs;
 
 /*
@@ -33,3 +34,4 @@ Route::post('/login', [AuthController::class, 'verifyLogin'])->name('auth.verify
 Route::get ('/admin', [AdminController::class, 'index'])->name('admin.dashboard');
 Route::get('/admin/data/gejala', [AdminController::class, "dataGejala"])->name("data.gejala");
 
+Route::get('/solution/{datakerusakan:id}', [SolutionController::class,"showArticle"] );

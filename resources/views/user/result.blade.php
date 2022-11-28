@@ -22,7 +22,7 @@
                 <p>{{ $dataKerusakan[$key-1]['Kerusakan'] }}</p>
                 <p>Dengan Keyakinan :</p>
                 <p>{{ $value * 100 }}%</p>
-                <button class="btn btn-primary">View Solution</button>
+                <a href="solution/{{ $dataKerusakan[$key-1]['id'] }}"><button class="btn btn-primary">View Solution</button></a>
             </div>
             @endif
         @endforeach
@@ -36,7 +36,7 @@
                     <p>{{ $dataKerusakan[$key-1]['Kerusakan'] }}</p>
                     <p>Dengan Keyakinan :</p>
                     <p>{{ $value * 100 }}%</p>
-                    <button class="btn btn-primary">View Solution</button>
+                    <a href="solution/{{ $dataKerusakan[$key-1]['id'] }}"><button class="btn btn-primary">View Solution</button></a>
                 </div>
                 @endif
             @endif
