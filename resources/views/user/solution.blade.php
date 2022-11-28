@@ -8,10 +8,15 @@
     @yield('assets')
 </head>
 <body>
-    <h1>Solusi Untuk Kerusakan Anda</h1>
-    <h5>Lakukan beberapa langkah dibawah ini:</h5>
-    @foreach ($solusi as $s)
-        <p>{{ $s['solution'] }}</p>
-    @endforeach
+    @include("templates.navbar")
+    <div class="container pt-5">
+        <h2>Solusi Untuk Kerusakan "{{ $kerusakan['Kerusakan'] }}"</h2>
+        <div class="card p-5 my-4">
+            <h5>Lakukan beberapa langkah dibawah ini:</h5>
+            @foreach ($solusi as $s)
+                <p>{{ $s['solution'] }}</p>
+            @endforeach
+        </div>
+    </div>
 </body>
 </html>
