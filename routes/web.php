@@ -30,8 +30,11 @@ Route::post('/result', [ResultController::class, 'store'])->name('cf.postmethod'
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/login', [AuthController::class, 'login'])->name('auth.login');
 Route::post('/login', [AuthController::class, 'verifyLogin'])->name('auth.verify');
+Route::get('/logout', [AuthController::class, 'logout'])->name('auth.logout');
 
 Route::get ('/admin', [AdminController::class, 'index'])->name('admin.dashboard');
 Route::get('/admin/data/gejala', [AdminController::class, "dataGejala"])->name("data.gejala");
 
 Route::get('/solution/{datakerusakan:id}', [SolutionController::class,"showArticle"] );
+
+Route::get('/admin/data/kerusakan', [AdminController::class, "dataKerusakan"])->name("data.kerusakan");

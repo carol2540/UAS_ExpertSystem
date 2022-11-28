@@ -15,7 +15,8 @@ class AuthController extends Controller
     public function verifyLogin(Request $request)
     {
         $validated = $request -> validate([
-            'email'=> "string|required",'password'=>"string|required"
+            'email'=> "string|required",
+            'password'=>"string|required"
         ]);
 
         if (Auth::attempt($validated)){
@@ -23,5 +24,16 @@ class AuthController extends Controller
             $request->session()->regenerate();
             return redirect()-> intended(route ('admin.dashboard'));
         }
+    }
+
+    public function logout(Request $request)
+    {
+        Auth::logout();
+ 
+        request()->session()->invalidate();
+ 
+        request()->session()->regenerateToken();
+ 
+        return redirect('/');
     }
 }
