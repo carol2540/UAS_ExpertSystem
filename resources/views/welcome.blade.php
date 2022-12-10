@@ -152,6 +152,10 @@ header .navigation a:hover{
     display: none;
   }
 
+  .info{
+      width: 100%;
+  }
+
   label{
     display: block;
     font-size: 25px;
@@ -209,24 +213,52 @@ header .navigation a:hover{
   }
 
   .content .info h2{
-    font-size: 45px;
+    text-align: center;
+    font-size: 20px;
     line-height: 50px;
   }
 
   .content .info h2 span{
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 600;
   }
 
   .content .info p{
-    font-size: 14px;
+    font-size: 12px;
+  }
+
+  .info-btn{
+    font-size: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
   }
 }
 
 @media (max-width: 560px){
+  header .logo{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+  }
+
+  .info{
+    width: 100%;
+  }
+
   .content .info h2{
     font-size: 35px;
     line-height: 40px;
+    text-align: center;
+  }
+
+  .info-btn{
+    font-size: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .content .info h2 span{
@@ -235,14 +267,15 @@ header .navigation a:hover{
   }
 
   .content .info p{
-    font-size: 14px;
+    font-size: 1rem;
+    text-align: justify;
+    text-justify: inter-word;
   }
 }
 
-    </style>
-  </head>
+  </style>
+</head>
   <body>
-
     <section>
       <input type="checkbox" id="check">
       <header>

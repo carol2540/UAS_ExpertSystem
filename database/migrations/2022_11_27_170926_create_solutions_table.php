@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->text("solution");
             $table->integer("solutionforid");
+            $table->text("linkarticle");
             $table->timestamps();
         });
     }
